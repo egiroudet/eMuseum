@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" href="styleIndex.css" />
+        <title>eMuseum</title>
+    </head>
+
+    <body>
+
+
+<div class="bg"></div>
+
+<div id="navbar">
+  <a href="theMuseum.html">The Museum</a>
+  <a href="informations.html">Informations</a>
+  <a href="whoweare.html">Who are we</a>
+  <a href="index.html">Home</a>
+
+</div>
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+
+
+<div class="whoAreWe">
+<br> </br>
+<h1 style="color:white;"> WHO ARE WE ?</h1>
+<br> </br>
+<p style="color:white;">
+<br> </br>For the moment, the collective is only made up of myself, a 2nd year student at Sciences Po Bordeaux.</p>
+<p style="color:white;"> I created this site to share a project that is... <a href="whoweare.html">[click here to read more]</a>
+</div>
+
+
+
+<div class="sInformer">
+<h2> INFORMATIONS </h2>
+<br></br>
+
+<p>What exactly is a language? How many languages are spoken today? What is their evolution? Why is preserving them so important?<p>
+<br></br>
+<p>
+<br></br><button class="button"><span><a href="informations.html">Discover</span></button></p>
+<br></br>
+</div>
+
+
+<div class="cadreMuseum">
+<div class="museum">
+<h1 style="color:white;"> THE MUSEUM</h1>
+<p style="color:white;">This is where you can take action to help us save endangered languages,
+ but also discover partially or already saved languages and maybe learn a few words!</p>
+ <p><a href="theMuseum.html">[click here]</a></p>
+</div>
+</div>
+
+<div class="footer">
+  <p style="color:white">contact</p>
+  <p style="color:white">egiroudet@gmail.com</p>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" href="styleMuseum.css" />
+        <title>eMuseum</title>
+    </head>
+
+    <body>
+
+
+<div class="bg"></div>
+
+<div id="navbar">
+  <a class="active"href="theMuseum.html">The Museum</a>
+  <a href="informations.html">Informations</a>
+  <a href="whoweare.html">Who are we</a>
+  <a href="index.html">Home</a>
+
+</div>
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+
+
+
+<div class="museum1">
+<p>Welcome to what will soon become the heart of this website.</p>
+<p>This page is intended to become a virtual linguistic museum, a huge repertoire in which as many languages ​​as our means allow us will be listed, 
+regardless of their number of speakers, in order to prevent them from falling into oblivion. Our goal is to collect a maximum of documentation on each language, such as dictionaries, 
+untranslated stories, history of the people who speak it and any other relevant element. </p>
+<p>Due to the recent launch of the project, we have not yet gathered sufficient documentation; but as soon as this is the case, everything will be available for free on this page.
+ You will be able to discover cultures from the other side of the world through their language simply by clicking on their name and reading what they have chosen to share with you. </p>
+
+<h2>How will this museum operate?</h2>
+<p>Since it is impossible for a simple individual or even a collective to bring together a rich documentation on several thousand languages, we decided to make this platform
+ a collaborative museum. Below is a form to fill out if you wish to register your language, or a language you know (even if your knowledge is limited!) So that it appears in the directory. </p>
+ <p>We recommend, if possible, that you attach documents to the information you write that will allow anyone to experience the culture you are presenting.
+We will also offer according to the public interest, and for remuneration from us, to allow you to give introductory lessons in your language on video. 
+Their content will be accessible free of charge to everyone. </p>
+
+<p>This site will not save languages ​​from extinction; it will not prevent the majority of languages ​​from being spoken by anyone. But he hopes at least to be able 
+to prevent some of them from falling into oblivion by leaving a trace of their passage and their way of seeing the world. </p>
+
+</div>
+
+
+<div class="container">
+	<h2>Language registration form</h2>
+  <form action="/action_page.php">
+    <label for="fname">Complete Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Language Name</label>
+    <input type="text" id="lname" name="lastname">
+
+    <label for="country">It is :</label>
+    <select id="country" name="country">
+      <option value="australia">My mother language</option>
+      <option value="canada">A language that I learned</option>
+      <option value="usa">Something else</option>
+    </select>
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="subject">Informations</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write whatever you want about the language you want to register." style="height:200px"></textarea>
+      </div>
+    </div>
+	<p>Add documents :</p>
+
+<form action="/action_page.php">
+  <input type="file" id="myFile" name="filename">
+</form>
+  <p>  </p>
+    <p>  </p>
+	  <p>  </p>
+	    <p>  </p>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+<div class="footer">
+  <p style="color:white">contact</p>
+  <p style="color:white">egiroudet@gmail.com</p>
+</div>
+
+
+    </body>
+</html>
