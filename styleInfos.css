@@ -60,6 +60,19 @@ body, html {
 }
 
 
+.msgPb {
+	display: block;
+	text-align: justify;
+	font-size: large;
+	word-spacing: 5px;
+	line-height: 1.5;
+    width: 700px;
+    margin: auto;
+    padding: 10px;
+	margin-top : 0px;
+}
+
+
 .cadreInfos2 {
 		background-color: #F5B041;
 }
